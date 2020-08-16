@@ -2,10 +2,10 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun Aug 16 20:35:42 2020
-# Process ID: 9120
+# Start of session at: Sun Aug 16 20:46:02 2020
+# Process ID: 15184
 # Current directory: C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7740 C:\Microarquitecturas_y_softcores\MyS_TP\MyS_TP_final\encoder\encoder.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13640 C:\Microarquitecturas_y_softcores\MyS_TP\MyS_TP_final\encoder\encoder.xpr
 # Log file: C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/vivado.log
 # Journal file: C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder\vivado.jou
 #-----------------------------------------------------------
@@ -21,3 +21,14 @@ WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'
 List of locked IPs:
 system_encoder_ip_0_0
 
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 814.746 ; gain = 100.930
+update_compile_order -fileset sources_1
+file mkdir C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk
+file copy -force C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.runs/impl_2/system_wrapper.sysdef C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk -hwspec C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk -hwspec C:/Microarquitecturas_y_softcores/MyS_TP/MyS_TP_final/encoder/encoder.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 16 20:53:42 2020...
