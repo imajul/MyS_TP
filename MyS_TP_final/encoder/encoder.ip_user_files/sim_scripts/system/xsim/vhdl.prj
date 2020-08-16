@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd" \
+"../../../bd/system/ipshared/456f/src/registro.vhd" \
+"../../../bd/system/ipshared/456f/src/contador_N_bits_mux.vhd" \
+"../../../bd/system/ipshared/456f/src/registro_dec.vhd" \
+"../../../bd/system/ipshared/456f/src/contador_bidireccional.vhd" \
+"../../../bd/system/ipshared/456f/src/ffd.vhd" \
+"../../../bd/system/ipshared/456f/src/ffd_ena.vhd" \
+"../../../bd/system/ipshared/456f/src/encoder.vhd" \
+"../../../bd/system/ipshared/456f/hdl/encoder_ip_v1_0.vhd" \
+"../../../bd/system/ip/system_encoder_ip_0_0/sim/system_encoder_ip_0_0.vhd" \
+"../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+
+nosort

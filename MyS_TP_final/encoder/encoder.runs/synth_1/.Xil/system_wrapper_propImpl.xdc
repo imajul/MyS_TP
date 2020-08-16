@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/constrs_1/imports/MyS_TP_final/TPfinal_ArtyZ7_10.xdc rfile:../../../encoder.srcs/constrs_1/imports/MyS_TP_final/TPfinal_ArtyZ7_10.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN Y14 IOSTANDARD LVCMOS33} [get_ports channel_A_i]
+set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS33} [get_ports channel_B_i]
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports rst_i]

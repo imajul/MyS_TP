@@ -1,0 +1,408 @@
+
+*** Running vivado
+    with args -log system_encoder_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_encoder_ip_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_encoder_ip_0_0.tcl -notrace
+Command: synth_design -top system_encoder_ip_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17368 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 389.371 ; gain = 100.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_encoder_ip_0_0' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ip/system_encoder_ip_0_0/synth/system_encoder_ip_0_0.vhd:85]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'encoder_ip_v1_0' declared at 'c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0.vhd:5' bound to instance 'U0' of component 'encoder_ip_v1_0' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ip/system_encoder_ip_0_0/synth/system_encoder_ip_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'encoder_ip_v1_0' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0.vhd:51]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'encoder_ip_v1_0_S_AXI' declared at 'c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:5' bound to instance 'encoder_ip_v1_0_S_AXI_inst' of component 'encoder_ip_v1_0_S_AXI' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'encoder_ip_v1_0_S_AXI' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:232]
+INFO: [Synth 8-226] default block is never used [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'encoder' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/encoder.vhd:42]
+	Parameter debounce_time bound to: 10 - type: integer 
+	Parameter freq_clk bound to: 50 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ffd' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/ffd.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ffd' (1#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/ffd.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'ffd_ena' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/ffd_ena.vhd:15]
+WARNING: [Synth 8-614] signal 'ena_i' is read in the process but is not in the sensitivity list [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/ffd_ena.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ffd_ena' (2#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/ffd_ena.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'contNbitsEstuct' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/contador_N_bits_mux.vhd:18]
+	Parameter max_count bound to: 500 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'registro' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/registro.vhd:15]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registro' (3#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/registro.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'contNbitsEstuct' (4#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/contador_N_bits_mux.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'cont_bidir' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/contador_bidireccional.vhd:19]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'registro_dec' [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/registro_dec.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registro_dec' (5#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/registro_dec.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'cont_bidir' (6#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/contador_bidireccional.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (7#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/encoder.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:225]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'encoder_ip_v1_0_S_AXI' (8#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0_S_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'encoder_ip_v1_0' (9#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/hdl/encoder_ip_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'system_encoder_ip_0_0' (10#1) [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ip/system_encoder_ip_0_0/synth/system_encoder_ip_0_0.vhd:85]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design encoder_ip_v1_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 444.922 ; gain = 155.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 444.922 ; gain = 155.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 444.922 ; gain = 155.750
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 764.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 764.398 ; gain = 475.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 764.398 ; gain = 475.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 764.398 ; gain = 475.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "salComp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.srcs/sources_1/bd/system/ipshared/456f/src/contador_bidireccional.vhd:42]
+INFO: [Synth 8-5546] ROM "deb_met_A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "deb_met_B" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 764.398 ; gain = 475.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ffd 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ffd_ena 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module registro 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module contNbitsEstuct 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module registro_dec 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module cont_bidir 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module encoder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module encoder_ip_v1_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "U0/encoder_ip_v1_0_S_AXI_inst/U1/deb_met_A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/encoder_ip_v1_0_S_AXI_inst/U1/deb_met_B" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_awprot[2]
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_awprot[1]
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_arprot[2]
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_arprot[1]
+WARNING: [Synth 8-3331] design system_encoder_ip_0_0 has unconnected port s_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/encoder_ip_v1_0_S_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/encoder_ip_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/encoder_ip_v1_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/encoder_ip_v1_0_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/encoder_ip_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/encoder_ip_v1_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/encoder_ip_v1_0_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/aw_en_reg) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_encoder_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/encoder_ip_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_encoder_ip_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 764.398 ; gain = 475.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 770.535 ; gain = 481.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 770.684 ; gain = 481.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     2|
+|3     |LUT2   |     2|
+|4     |LUT3   |     3|
+|5     |LUT4   |    45|
+|6     |LUT5   |    40|
+|7     |LUT6   |    46|
+|8     |FDCE   |    32|
+|9     |FDRE   |   130|
+|10    |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      |   310|
+|2     |  U0                           |encoder_ip_v1_0       |   309|
+|3     |    encoder_ip_v1_0_S_AXI_inst |encoder_ip_v1_0_S_AXI |   309|
+|4     |      U1                       |encoder               |   184|
+|5     |        cont_N_bits_A_inst     |contNbitsEstuct       |    22|
+|6     |          reg_inst             |registro_8            |    22|
+|7     |        cont_N_bits_B_inst     |contNbitsEstuct_0     |    22|
+|8     |          reg_inst             |registro              |    22|
+|9     |        cont_bidir_inst        |cont_bidir            |   127|
+|10    |          reg_inst             |registro_dec          |   127|
+|11    |        ffd_A1_inst            |ffd                   |     1|
+|12    |        ffd_A2_inst            |ffd_1                 |     1|
+|13    |        ffd_A3_inst            |ffd_ena               |     3|
+|14    |        ffd_A4_inst            |ffd_2                 |     1|
+|15    |        ffd_AB_inst            |ffd_ena_3             |     2|
+|16    |        ffd_B1_inst            |ffd_4                 |     1|
+|17    |        ffd_B2_inst            |ffd_5                 |     1|
+|18    |        ffd_B3_inst            |ffd_ena_6             |     1|
+|19    |        ffd_B4_inst            |ffd_7                 |     2|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 791.426 ; gain = 502.254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:00 . Memory (MB): peak = 791.426 ; gain = 182.777
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 791.426 ; gain = 502.254
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 791.426 ; gain = 513.723
+INFO: [Common 17-1381] The checkpoint 'C:/Microarquitecturas_y_softcores/MyS_TP_final/encoder/encoder.runs/system_encoder_ip_0_0_synth_1/system_encoder_ip_0_0.dcp' has been generated.
